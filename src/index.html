@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Free Bootstrap Admin Template</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Main styles for this application-->
+  <link href="node_modules/@coreui/icons/css/free.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="c-app">
+
+<!-- sidebar-->
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show sidebar" id="sidebar">
+  <div class="c-sidebar-brand">
+    <svg class="c-sidebar-brand-full" width="118" height="46">
+      <use xlink:href="assets/brand/coreui.svg#full"></use>
+    </svg>
+    <svg class="c-sidebar-brand-minimized" width="46" height="46">
+      <use xlink:href="assets/brand/coreui.svg#signet"></use>
+    </svg>
+  </div>
+  <ul class="c-sidebar-nav">
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="index.html">
+      <i class="c-icon cil-browser c-sidebar-nav-icon"></i>Overview
+      </a>
+    </li>
+    <li class="c-sidebar-nav-title">Video demos</li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="replay.html">
+      <i class="c-icon cil-media-play c-sidebar-nav-icon"></i>2d replay
+      </a>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="positions.html">
+      <i class="c-icon cil-location-pin c-sidebar-nav-icon"></i>positions
+      </a>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="colors.html">
+      <svg class="c-sidebar-nav-icon">
+        <use xlink:href="assets/icons/custom/sidebar.svg#grenade"></use>
+      </svg>
+      Grenades
+      </a>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="colors.html">
+      <svg class="c-sidebar-nav-icon">
+        <use xlink:href="assets/icons/custom/sidebar.svg#skull"></use>
+      </svg>
+      Kills
+      </a>
+    </li>
+    <li class="c-sidebar-nav-item">
+      <a class="c-sidebar-nav-link" href="index.html">
+      <i class="c-icon cil-map c-sidebar-nav-icon"></i>strategy
+      </a>
+    </li>
+  </ul>
+
+  <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+</div>
+<!-- /.sidebar -->
+
+<div class="c-wrapper">
+  <!-- header -->
+  <header class="c-header c-header-dark c-header-fixed header">
+    <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar"
+            data-class="c-sidebar-show">
+      <svg class="c-icon c-icon-lg">
+        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+      </svg>
+    </button>
+    <a class="c-header-brand d-lg-none" href="#">
+      <svg width="118" height="46" alt="CoreUI Logo">
+        <use xlink:href="assets/brand/coreui.svg#full"></use>
+      </svg>
+    </a>
+    <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
+            data-class="c-sidebar-lg-show" responsive="true">
+      <svg class="c-icon c-icon-lg">
+        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+      </svg>
+    </button>
+    <ul class="c-header-nav ml-auto mr-4">
+      <li class="c-header-nav-item dropdown d-md-down-none mx-2">
+        <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+        <svg class="c-icon">
+          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+        </svg>
+        <span class="badge badge-pill badge-danger">5</span></a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+          <div class="dropdown-header bg-light"><strong>You have 5 notifications</strong></div>
+          <a class="dropdown-item" href="#">
+            <svg class="c-icon mfe-2 text-success">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow"></use>
+            </svg>
+            New user registered</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mfe-2 text-danger">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-unfollow"></use>
+          </svg>
+          User deleted</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mfe-2 text-info">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+          </svg>
+          Sales report is ready</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mfe-2 text-success">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+          </svg>
+          New client</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mfe-2 text-warning">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+          </svg>
+          Server overloaded</a>
+        </div>
+      </li>
+      <li class="c-header-nav-item dropdown d-md-down-none mx-2 ">
+        <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+        <svg class="c-icon">
+          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+        </svg>
+        <span class="badge badge-pill badge-info">7</span></a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 ">
+          <div class="dropdown-header bg-light"><strong>You have 4 messages</strong></div>
+          <a class="dropdown-item" href="#">
+            <div class="message">
+              <div class="py-3 mfe-3 float-left">
+                <div class="c-avatar">
+                  <img class="c-avatar-img" src="assets/img/avatars/7.jpg" alt="user@email.com">
+                  <span class="c-avatar-status bg-success"></span>
+                </div>
+              </div>
+              <div>
+                <small class="text-muted">John Doe</small>
+                <small class="text-muted float-right mt-1">Just now</small>
+              </div>
+              <div class="text-truncate font-weight-bold">
+                <span class="text-danger">!</span>
+                Important message
+              </div>
+              <div class="small text-muted text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt...
+              </div>
+            </div>
+          </a><a class="dropdown-item" href="#">
+          <div class="message">
+            <div class="py-3 mfe-3 float-left">
+              <div class="c-avatar">
+                <img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com">
+                <span class="c-avatar-status bg-warning"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">John Doe</small>
+              <small class="text-muted float-right mt-1">5 minutes ago</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt...
+            </div>
+          </div>
+        </a><a class="dropdown-item" href="#">
+          <div class="message">
+            <div class="py-3 mfe-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/5.jpg" alt="user@email.com"><span
+                class="c-avatar-status bg-danger"></span></div>
+            </div>
+            <div><small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt...
+            </div>
+          </div>
+        </a><a class="dropdown-item" href="#">
+          <div class="message">
+            <div class="py-3 mfe-3 float-left">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/4.jpg" alt="user@email.com"><span
+                class="c-avatar-status bg-info"></span></div>
+            </div>
+            <div><small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">4:03 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt...
+            </div>
+          </div>
+        </a><a class="dropdown-item text-center border-top" href="#"><strong>View all messages</strong></a>
+        </div>
+      </li>
+      <li class="c-header-nav-item d-md-down-none mx-2">
+        <a class="btn btn-block btn-info active c-header-nav-link" href="#">
+          Subscribe
+        </a>
+      </li>
+      <li class="c-header-nav-item dropdown">
+        <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right pt-0">
+          <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
+          <a class="dropdown-item" href="#">
+            <svg class="c-icon mr-2">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+            </svg>
+            Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+          </svg>
+          Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+          </svg>
+          Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+          </svg>
+          Comments<span class="badge badge-warning ml-auto">42</span></a>
+          <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div>
+          <a class="dropdown-item" href="#">
+            <svg class="c-icon mr-2">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+            </svg>
+            Profile</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+          </svg>
+          Settings</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
+          </svg>
+          Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
+          </svg>
+          Projects<span class="badge badge-primary ml-auto">42</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <svg class="c-icon mr-2">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+            </svg>
+            Lock Account</a><a class="dropdown-item" href="#">
+          <svg class="c-icon mr-2">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+          </svg>
+          Logout</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <!-- /header -->
+
+  <div class="c-body">
+    <main class="c-main">
+      <div class="container-fluid">
+        <div class="fade-in">
+          <div class="row">
+            <div class="col-12 col-sm-4 d-flex justify-content-center">
+              <div class="btn-group filter">
+                <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All maps</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <a class="dropdown-item" href="#">de_cache</a>
+                  <a class="dropdown-item" href="#">de_dust2</a>
+                  <a class="dropdown-item" href="#">de_inferno</a>
+                  <a class="dropdown-item" href="#">de_mirage</a>
+                  <a class="dropdown-item" href="#">de_nuke</a>
+                  <a class="dropdown-item" href="#">de_overpass</a>
+                  <a class="dropdown-item" href="#">de_train</a>
+                  <a class="dropdown-item" href="#">de_vertigo</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-12 col-sm-4 d-flex justify-content-center">
+              <div class="btn-group filter">
+                <button class="btn btn-secondary dropdown-toggle " id="dropdownMenuButton2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anyone</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <a class="dropdown-item" href="#">Astralis</a>
+                  <a class="dropdown-item" href="#">Team Liquid</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-12 col-sm-4 d-flex justify-content-center">
+              <div class="btn-group filter">
+                <button class="btn btn-secondary dropdown-toggle " id="dropdownMenuButton3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anyone</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <a class="dropdown-item" href="#">Astralis</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="row mt-20 dropdown-info">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Filter for Astralis</h3>
+
+                  <div class="range">
+                    <div class="range-text">
+                      <div class="range-label">Equipment value</div>
+                      <div class="range-value">$ 11,000 - $ 18,500</div>
+                    </div>
+                    <div class="range-input">
+                      <div class="range-background"></div>
+                      <div class="range-background-focus" style="left: 36.6667%; width: 25%;"></div>
+                      <div class="range-dot" style="left: 36.6667%;">
+                        <div class="range-dot-circle-outline"></div>
+                        <div class="range-dot-circle"></div>
+                      </div>
+                      <div class="range-dot range-dot"
+                           style="left: 61.6667%;">
+                        <div class="range-dot-circle-outline"></div>
+                        <div class="range-dot-circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="range-categories">
+                    <div tabindex="0" class="text-button">Eco</div>
+                    <div tabindex="0" class="text-button">Partial buy</div>
+                    <div tabindex="0" class="text-button">Full buy</div>
+                  </div>
+                  <h3 class="card-title">Team side (Select a map to enable picking team sides)</h3>
+
+                  <div class="teams d-flex">
+                    <button class="teams-el teams-left">
+                      CT
+                    </button>
+                    <button class="teams-el teams-right">
+                      T
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row-->
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-secondary mb-20"><span class="btn-icon cil-filter-x mr-2"></span>Reset filters</button>
+              <div class="select-info mb-20">
+                27 rounds selected (<a href="#">Deselect all rounds</a> | <a href="#">Select all rounds</a>)
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+
+              <div class="contests-header rounded border d-flex align-items-center justify-content-between" >
+                <div class="contests-header-left d-flex align-items-center flex-grow-1">
+                  <input class="mr-15" type="checkbox" value="" checked id="defaultCheck1">
+                  <div class="contests-header-result d-flex flex-column flex-grow-1" data-toggle="collapse" data-target="#collapseEl" aria-expanded="true" aria-controls="collapseEl">
+                    <div class="contests-header-scores d-flex">
+                      <p class="tl-name mr-10">Astralis</p>
+                      <p class="tl-score mr-10">11</p>
+                      <p class="mr-10">-</p>
+                      <p class="tr-score mr-10">16</p>
+                      <p class="tr-name">Team Liquid</p>
+                    </div>
+                    <div class="contests-header-map d-flex">
+                      <p class="small text-muted mr-10">de_dust</p>
+                      <p class="small text-muted mr-10">|</p>
+                      <p class="small text-muted mr-10">Reaname demo</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contests-header-right">
+                  <p class="small text-muted">27 rounds</p>
+                  <p class="small text-muted">27 rounds selected</p>
+                </div>
+
+
+              </div>
+              <div class="collapse show" id="collapseEl">
+                <div class="card card-body teams-container border-top-0">
+                  <div class="row mb-20">
+                    <div class="col-sm-6 d-flex align-items-center flex-column">
+                      <h4 class="mb-10 mt-10">Select rounds where Astralis are</h4>
+                      <div class="teams d-flex">
+                        <button class="teams-el teams-left">
+                          CT
+                        </button>
+                        <button class="teams-el teams-right">
+                          T
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center flex-column">
+                      <h4 class="mb-10 mt-10">Select rounds where Team Liquid are</h4>
+                      <div class="teams d-flex">
+                        <button class="teams-el teams-left">
+                          CT
+                        </button>
+                        <button class="teams-el teams-right">
+                          T
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                        <table class="table table-responsive-sm table-hover table-align-middle comp-results">
+                          <tbody>
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          <!-- .comp-result-->
+                          <tr class="comp-result d-flex align-items-center">
+                            <td class="text-center">
+                              <label>
+                                <input class="mr-15" type="checkbox" value="" checked>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div class="team team-left mb-20"></div>
+                              <div class="team team-right"></div>
+                            </td>
+                            <td>
+                              <div class="mb-10">Astralis</div>
+                              <div>Team Liquid</div>
+                            </td>
+                            <td>
+                              <div  class="mb-10">0</div>
+                              <div>1</div>
+                            </td>
+                            <td>
+                              <div class="mb-20 d-flex">
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team team-left rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                              <div class="d-flex">
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team team-right rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                                <span class="team rounded-circle"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="mb-10">
+                                <span class="small label label-info">$ 4,400</span>
+                              </div>
+                              <div>
+                                <span class="small label label-info">$ 2,200</span>
+                                <span class="small label label-danger">$ 5,400</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- /.comp-result-->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row-->
+        </div>
+      </div>
+    </main>
+    <footer class="c-footer">
+      <div class="ml-auto"><a href="#">Company</a> &copy; 2021</div>
+    </footer>
+  </div>
+</div>
+<!-- CoreUI and necessary plugins-->
+<script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+<!--[if IE]><!-->
+<script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
+<!--<![endif]-->
+<!-- Plugins and scripts required by this view-->
+<script src="js/main.js"></script>
+</body>
+</html>

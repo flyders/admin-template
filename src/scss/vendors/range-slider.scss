@@ -1,0 +1,121 @@
+
+.range {
+  width: 60%;
+}
+.range-hitbox {
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: .2;
+  position: absolute
+}
+
+.range-text {
+  margin-bottom: 1rem;
+  font-size: .9rem
+}
+
+.range-input, .range-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.range-input {
+  position: relative;
+  height: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.range-background {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #aaa
+}
+
+.range-background-focus {
+  position: absolute;
+  height: 2px;
+  background: #2e78a9
+}
+
+.range-value {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #333;
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap
+}
+
+.range--vertical .range-background, .range--vertical .range-input {
+  width: 2px;
+  height: 100%
+}
+
+.range--vertical .range-background-focus {
+  width: 2px;
+  height: unset
+}
+
+.range-dot {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: left .1s;
+  transition: left .1s
+}
+
+.range-dot:hover .range-dot-circle-outline {
+  width: 32px;
+  height: 32px;
+  opacity: .2
+}
+
+.range--dragging .range-dot .range-dot-circle-outline, .range-dot.dragging .range-dot-circle-outline {
+  width: 48px;
+  height: 48px;
+  opacity: .2
+}
+
+.range-dot-circle, .range-dot-circle-outline {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #2e78a9;
+  border-radius: 50%
+}
+
+.range-dot-circle-outline {
+  opacity: 0;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out
+}
+
+.range-categories {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}

@@ -1,0 +1,47 @@
+/*****************************************************/
+/* Global styles */
+/*****************************************************/
+html {
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  min-width: 340px;
+  background-color: $body-bgr;
+  font-family: $HelveticaNeueLTStdLt;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $ele-bgr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;                 //prevent callout to copy image, etc when tap to hold
+  -webkit-text-size-adjust: none;              //prevent webkit from resizing text to fit
+  //-webkit-user-select: none;                   //prevent copy paste, to allow, change 'none' to 'text'
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $ele-bgr;
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($body-bgr, 0.2);
+    border-radius: 20px;
+  }
+}
+a, p, span, em, strong, label, li, div {
+  font-family: $HelveticaNeueLTStdLt;
+  color: $ele-bgr;
+}
+h1, h2, h3, h4, b {
+  font-size: 17px;
+  font-family: $HelveticaNeueLTStdLt;
+  color: $ele-bgr;
+}
+a:hover {
+  text-decoration: none;
+}
+
