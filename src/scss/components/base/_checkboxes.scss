@@ -156,4 +156,26 @@ $md-checkbox-label-padding: .75rem;
       }
     }
   }
+  &.td {
+    label {
+      background: transparent;
+      color: $danger-dark;
+      &:before {
+        border: $md-checkmark-width solid $danger-dark;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        + label:before{
+          background: transparent;
+          border: $md-checkmark-width solid $danger-dark;
+        }
+        + label:after {
+          border: $md-checkmark-width solid $danger-dark;
+          border-top-style: none;
+          border-right-style: none;
+        }
+      }
+    }
+  }
 }

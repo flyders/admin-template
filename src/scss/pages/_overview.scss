@@ -4,37 +4,41 @@
   .card {
     border-left: 10px solid $accent;
   }
-
 }
 .teams-container {
+  padding: 0;
   background-color: #f5f5f5;
   border-radius: 0 0 4px 4px;
-  padding: 0;
 }
+
 .teams {
   display: block;
+  flex: 0 0 50%;
   width: 206px;
   height: 30px;
-  flex: 0 0 50%;
 }
+
 .teams-el {
   flex: 0 0 50%;
 }
+
 .teams-left {
-  background-color: $team-left-lite;
   color: $team-left;
-  transition: border $speed-high ease-out;
   border: 1px solid transparent;
+  background-color: $team-left-lite;
+  transition: border $speed-high ease-out;
   &:hover {
     background-color: $team-left-lite;
     border: 1px solid $team-left;
   }
 }
+
 .teams-right {
   background-color: $team-right-lite;
   color: $team-right;
-  transition: border $speed-high ease-out;
   border: 1px solid transparent;
+  transition: border $speed-high ease-out;
+
   &:hover {
     background-color: $team-right-lite;
     border: 1px solid $team-right;
@@ -51,12 +55,12 @@
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(-50%) rotate(90deg);
     width: 16px;
     height: 20px;
-    transition: transform .2s ease-out;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%238a93a2' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E");
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform .2s ease-out;
   }
   &.collapsed:after {
     transform: translateY(-50%) rotate(270deg);
@@ -66,10 +70,12 @@
     user-select: none;
   }
 }
+
 .comp-results {
   background-color: $body-bgr;
   margin: 0;
 }
+
 .comp-result {
   cursor: pointer;
   border-top: 1px solid lighten($text-lite, 20%);
@@ -87,10 +93,12 @@
      background-color: $team-right;
     }
   }
+
   td {
     padding: 1rem;
     border: 0;
   }
+
   .label {
     padding: 3px;
 
@@ -101,8 +109,4 @@
       background-color: $accent-light;
     }
   }
-}
-.c-footer {
-  background-color: $nav-bgr;
-  border-top: 1px solid lighten($nav-bgr, 20%);
 }

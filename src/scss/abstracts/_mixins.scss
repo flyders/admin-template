@@ -9,27 +9,3 @@
     background-color: red;
   }
 }
-
-@mixin element($element) {
-  &__#{$element} {
-    @content;
-  }
-}
-
-@mixin modifier($modifier) {
-  &--#{$modifier} {
-    @content;
-  }
-}
-
-@mixin e($element) {
-  @include element($element)  {
-    @content;
-  }
-}
-
-@mixin m($modifier) {
-  @include modifier($modifier) {
-    @content;
-  }
-}

@@ -27,7 +27,7 @@
 }
 
 /* ************************************
- * Right sidebar
+ * Sidebar Right
  * ************************************/
 
 .sidebar-right {
@@ -35,6 +35,7 @@
     flex: 0 0 $sidebar-width;
     width: $sidebar-width;
     padding-left: $sidebar-close-btn-width;
+
     &.c-sidebar-minimized {
       flex: 0 0 $sidebar-minimized-width;
       width: $sidebar-minimized-width;
@@ -68,11 +69,11 @@
 html:not([dir="rtl"]) .c-sidebar.c-sidebar-right, *[dir="rtl"] .c-sidebar:not(.c-sidebar-right) {
   margin-right: 0;
 }
-html[dir="rtl"] .c-sidebar-minimized.sidebar-right .c-sidebar-minimizer::before, html:not([dir="rtl"]) .c-sidebar-minimized.c-sidebar-right .c-sidebar-minimizer::before {
-  transform: rotate(
-      0deg
-  );
+html[dir="rtl"] .c-sidebar-minimized.sidebar-right .c-sidebar-minimizer::before,
+html:not([dir="rtl"]) .c-sidebar-minimized.c-sidebar-right .c-sidebar-minimizer::before {
+  transform: rotate(0deg);
 }
+
 @media (min-width: 992px) and (min-width: 992px) {
     html:not([dir="rtl"]) .c-sidebar.sidebar-right.c-sidebar-lg-show:not(.c-sidebar-left).c-sidebar-fixed ~ .c-wrapper,
     html:not([dir="rtl"]) .c-sidebar.sidebar-right.c-sidebar-show:not(.c-sidebar-left).c-sidebar-fixed ~ .c-wrapper {
@@ -88,6 +89,5 @@ html[dir="rtl"] .c-sidebar-minimized.sidebar-right .c-sidebar-minimizer::before,
     .c-sidebar-minimizer {
       display: block;
     }
-
   }
 }

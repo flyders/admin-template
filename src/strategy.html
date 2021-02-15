@@ -30,7 +30,7 @@
   <link href="node_modules/@coreui/icons/css/free.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="c-app game positions">
+<body class="c-app game strategy">
 
 <!-- sidebar-->
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show sidebar" id="sidebar">
@@ -95,12 +95,12 @@
   <ul class="nav nav-tabs nav-underline nav-underline-primary" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab" aria-selected="true">
-        <i class="c-icon cil-group"></i>
+        <i class="c-icon cil-briefcase"></i>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-selected="false">
-        <i class="c-icon cil-comment-square "></i>
+        <i class="c-icon cil-folder"></i>
       </a>
     </li>
   </ul>
@@ -108,106 +108,67 @@
   <div class="tab-content">
     <div class="tab-pane active fade-in" id="timeline" role="tabpanel">
       <div class="tab-block">
-        <h4 class="text-white">Teams</h4>
-        <span class="small text-muted ">Showing 1 rounds</span>
-        <div class="radio-container d-flex align-items-center mt-15">
-          <span class="team-l-clr">Astralis
-          </span>
-          <i class="c-icon cil-swap-horizontal c-sidebar-nav-icon text-white"></i>
-          <span class="team-r-clr">Team Liquid</span>
-
+        <h4 class="text-white">Change Map</h4>
+        <div class="btn-group dropdwn mt-20">
+          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All maps</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">de_cache</a>
+            <a class="dropdown-item" href="#">de_dust2</a>
+            <a class="dropdown-item" href="#">de_inferno</a>
+            <a class="dropdown-item" href="#">de_mirage</a>
+            <a class="dropdown-item" href="#">de_nuke</a>
+            <a class="dropdown-item" href="#">de_overpass</a>
+            <a class="dropdown-item" href="#">de_train</a>
+            <a class="dropdown-item" href="#">de_vertigo</a>
+          </div>
         </div>
-
       </div>
       <div class="tab-block">
-        <h4 class="text-white">Players</h4>
-        <div class="chechbox-container d-flex align-items-center flex-wrap mt-15">
-          <div class="md-checkbox mr-15 mb-15 tl">
-            <input id="i13" type="checkbox" checked>
-            <label for="i13">dupreeh</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tl">
-            <input id="i14" type="checkbox" >
-            <label for="i14">Magisk</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tl">
-            <input id="i15" type="checkbox" >
-            <label for="i15">gla1ve</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tl">
-            <input id="i16" type="checkbox" checked>
-            <label for="i16">device</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tl">
-            <input id="i17" type="checkbox" checked>
-            <label for="i17">Xyp9x</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tr">
-            <input id="i18" type="checkbox" checked>
-            <label for="i18">nitr0</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tr">
-            <input id="i19" type="checkbox" >
-            <label for="i19">NAF</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tr">
-            <input id="i120" type="checkbox" >
-            <label for="i120">EliGE</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tr">
-            <input id="i21" type="checkbox" checked>
-            <label for="i21">twistzz</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tr">
-            <input id="i22" type="checkbox" checked>
-            <label for="i22">Stewie2K</label>
-          </div>
+        <h4 class="text-white">Tools</h4>
+        <div class="tools-container d-flex justify-content-between mt-15">
+          <a class="tool d-flex justify-content-center align-items-center" href="#" title="">
+            <i class="c-icon cil-fullscreen text-white "></i>
+          </a>
+          <a class="tool d-flex justify-content-center align-items-center" href="#" title="">
+            <i class="c-icon cil-brush text-white d-flex"></i>
+          </a>
+          <a class="tool d-flex justify-content-center align-items-center" href="#" title="">
+            <i class="c-icon cil-clock text-white d-flex"></i>
+          </a>
+          <a class="tool d-flex justify-content-center align-items-center" href="#" title="">
+            <i class="c-icon cil-cloud-download text-white d-flex"></i>
+          </a>
+          <a class="tool d-flex justify-content-center align-items-center" href="#" title="">
+            <i class="c-icon cil-x-circle text-white d-flex"></i>
+          </a>
         </div>
       </div>
-
       <div class="tab-block">
-        <h4 class="text-white">Players</h4>
-        <div class="chechbox-container d-flex  flex-column mt-15">
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i23" type="checkbox" checked>
-            <label for="i23">dupreeh</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i24" type="checkbox" >
-            <label for="i24">Magisk</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i25" type="checkbox" >
-            <label for="i25">gla1ve</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i26" type="checkbox" checked>
-            <label for="i26">device</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i27" type="checkbox" checked>
-            <label for="i27">Xyp9x</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i28" type="checkbox" checked>
-            <label for="i28">nitr0</label>
-          </div>
-          <div class="md-checkbox mr-15 mb-15 tw">
-            <input id="i29" type="checkbox" >
-            <label for="i29">NAF</label>
-          </div>
+        <h4 class="text-white">Colors</h4>
+        <div class="tools-container d-flex justify-content-between mt-15">
+
         </div>
       </div>
+      <div class="tab-block">
+        <h4 class="text-white">Entities</h4>
+        <div class="tools-container d-flex justify-content-between mt-15">
 
+        </div>
+      </div>
     </div>
     <div class="tab-pane p-3 fade-in" id="messages" role="tabpanel">
-      <div class="message">
-        Upgrade to a Company license to access round notes
+      <div class="p-3">
+        <h4 class="text-white text-uppercase">Playbook</h4>
+        <div class="d-flex justify-content-between mt-15 mb-20 text-muted ">
+          You have no strategies in your playbook.
+          Create one by pressing + below.
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="#" class="save-btn">Save</a>
+          <a href="#" class="plus-btn rounded-circle shadow d-flex justify-content-center align-items-center">+</a>
+        </div>
       </div>
     </div>
-<!--    <div class="tab-pane p-3" id="settings" role="tabpanel">-->
-<!--      <h6>Settings</h6>-->
-<!--    </div>-->
   </div>
   <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
@@ -410,7 +371,7 @@
         </div>
         <div class="left-icon-group d-flex flex-column align-items-end">
           <a href="#" class="c-icon text-white cil-video c-sidebar-nav-icon"></a>
-          <a href="#" class="c-icon text-white cil-settings c-sidebar-nav-icon"></a>
+<!--          <a href="#" class="c-icon text-white cil-settings c-sidebar-nav-icon"></a>-->
 <!--          <a href="#" class="c-icon text-white cil-keyboard c-sidebar-nav-icon"></a>-->
           <a href="#" class="c-icon text-white cil-fullscreen c-sidebar-nav-icon"></a>
         </div>

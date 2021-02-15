@@ -32,8 +32,8 @@
 </head>
 <body class="c-app game replay">
 
-<!-- sidebar left-->
-<div class="c-sidebar c-sidebar-dark c-sidebar-left c-sidebar-fixed c-sidebar-lg-show c-sidebar-minimized sidebar-left" id="sidebar">
+<!-- sidebar-->
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show sidebar" id="sidebar">
   <div class="c-sidebar-brand">
     <svg class="c-sidebar-brand-full" width="118" height="46">
       <use xlink:href="assets/brand/coreui.svg#full"></use>
@@ -45,46 +45,46 @@
   <ul class="c-sidebar-nav">
     <li class="c-sidebar-nav-item">
       <a class="c-sidebar-nav-link" href="index.html">
-      <i class="c-icon cil-browser c-sidebar-nav-icon"></i>Overview
+        <i class="c-icon cil-browser c-sidebar-nav-icon"></i>Overview
       </a>
     </li>
     <li class="c-sidebar-nav-title">Video demos</li>
     <li class="c-sidebar-nav-item">
-      <a class="c-sidebar-nav-link" href="index.html">
-      <i class="c-icon cil-media-play c-sidebar-nav-icon"></i>2d replay
+      <a class="c-sidebar-nav-link" href="replay.html">
+        <i class="c-icon cil-media-play c-sidebar-nav-icon"></i>2d replay
       </a>
     </li>
     <li class="c-sidebar-nav-item">
       <a class="c-sidebar-nav-link" href="positions.html">
-      <i class="c-icon cil-location-pin c-sidebar-nav-icon"></i>positions
+        <i class="c-icon cil-location-pin c-sidebar-nav-icon"></i>Positions
       </a>
     </li>
     <li class="c-sidebar-nav-item">
-      <a class="c-sidebar-nav-link" href="colors.html">
-      <svg class="c-sidebar-nav-icon">
-        <use xlink:href="assets/icons/custom/sidebar.svg#grenade"></use>
-      </svg>
-      Grenades
+      <a class="c-sidebar-nav-link" href="grenades.html">
+        <svg class="c-sidebar-nav-icon">
+          <use xlink:href="assets/icons/custom/sidebar.svg#grenade"></use>
+        </svg>
+        Grenades
       </a>
     </li>
     <li class="c-sidebar-nav-item">
-      <a class="c-sidebar-nav-link" href="colors.html">
-      <svg class="c-sidebar-nav-icon">
-        <use xlink:href="assets/icons/custom/sidebar.svg#skull"></use>
-      </svg>
-      Kills
+      <a class="c-sidebar-nav-link" href="kills.html">
+        <svg class="c-sidebar-nav-icon">
+          <use xlink:href="assets/icons/custom/sidebar.svg#skull"></use>
+        </svg>
+        Kills
       </a>
     </li>
     <li class="c-sidebar-nav-item">
-      <a class="c-sidebar-nav-link" href="index.html">
-      <i class="c-icon cil-map c-sidebar-nav-icon"></i>strategy
+      <a class="c-sidebar-nav-link" href="strategy.html">
+        <i class="c-icon cil-map c-sidebar-nav-icon"></i>Strategy
       </a>
     </li>
   </ul>
 
   <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
-<!-- /.sidebar left-->
+<!-- /.sidebar -->
 <!-- sidebar right-->
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show sidebar-right c-sidebar-right" id="aside">
   <button class="c-sidebar-close c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-show" responsive="true">
@@ -106,7 +106,7 @@
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active" id="timeline" role="tabpanel">
+    <div class="tab-pane active  fade-in" id="timeline" role="tabpanel">
       <table class="table table-responsive-sm table-hover table-align-middle">
         <tbody>
         <!-- tr-->
@@ -621,13 +621,10 @@
         </tbody>
       </table>
     </div>
-    <div class="tab-pane p-3" id="messages" role="tabpanel">
+    <div class="tab-pane p-3  fade-in" id="messages" role="tabpanel">
       <div class="message">
         Upgrade to a Company license to access round notes
       </div>
-    </div>
-    <div class="tab-pane p-3" id="settings" role="tabpanel">
-      <h6>Settings</h6>
     </div>
   </div>
   <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>

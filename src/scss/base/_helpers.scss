@@ -14,6 +14,14 @@
   display: flex;
   justify-content: center;
 }
+.team-l-clr {
+  color: $team-left;
+}
+.team-r-clr {
+  color: $team-right;
+}
+
+/*===== Margins and paddings =====*/
 .mt-20 {
   margin-top: 20px;
 }

@@ -1,9 +1,6 @@
 // Import your scss file here if you want to be included in the main style.scss
-
+@import "reusable";
 @import "overview";
 @import "replay";
 @import "positions";
-//@import "grenades";
-//@import "kills";
-//@import "strategy";
-//@import "upload";
+@import "strategy";

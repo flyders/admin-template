@@ -8,7 +8,7 @@ $accent-light: #7bccff;
 $text-lite: #b0b0b0;
 $body-bgr: #fff;
 $nav-bgr: #3c4b64;
-$overlay: rgba($ele-bgr, 0.2);
+$link-hover: #5a6e8f;
 $team-left: #fabc49;
 $team-left-lite: lighten(#f9b115, 30%);
 $team-right: #2eb85c;
@@ -18,19 +18,11 @@ $sidebar-close-btn-width: 26px;
 $sidebar-width: var(--sidebar-right-width);
 $sidebar-minimized-width: var(--sidebar-right-mimized-width);
 
-
-  //$btn-bgr: #30373F;
-//$btn-accent-bgr: #1DDA61;
-//$ribbon-bgr: #FDA932;
-
-$link-hover: #5a6e8f;
-
 /*===== Speed =====*/
 $speed: 1s;
 $speed-high: .3s;
 
 /*===== others =====*/
-$wrapper: 1072px;
 $nav-height: 70px;
 
 /*===== Fonts =====*/
